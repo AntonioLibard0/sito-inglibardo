@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Antonio Libardo | Progettazione Firmware Embedded</title>
+<link rel="canonical" href="https://inglibardo.it/">
+<meta name="description" content="Progettazione firmware per microcontrollori (STM32, Microchip, Renesas, NXP, ESP32 e altri), protocolli di comunicazione industriale, connettività IoT, porting e collaudo di fine linea.">
+<link rel="stylesheet" href="style.css?v=20260930">
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <div class="brand">Antonio <span>Libardo</span></div>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="servizi.html">Servizi</a>
+      <a href="contatti.html">Contatti</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- Fascia iniziale con l'immagine principale (vedi .hero-banner in style.css) -->
+  <section class="hero hero-banner">
+    <h1>Progettazione firmware per sistemi embedded</h1>
+    <p>
+      Firmware su misura per microcontrollori e sistemi di controllo industriale:
+      dalla scelta del microcontrollore e dal protocollo di comunicazione
+      al debug su hardware reale, fino al collaudo in produzione e alla manutenzione nel tempo.
+    </p>
+    <div class="cta-row">
+      <a href="servizi.html" class="btn btn-primary">Scopri i servizi</a>
+      <a href="contatti.html" class="btn btn-outline">Contatti</a>
+    </div>
+  </section>
+
+  <!-- Produttori delle piattaforme usate (loghi: Simple Icons CC0 e Wikimedia Commons PD) -->
+  <h2 class="section-title">Piattaforme supportate</h2>
+  <p class="brands-note">Microcontrollori e schede dei principali produttori, con i rispettivi ambienti di sviluppo ufficiali.</p>
+  <div class="brands">
+    <div class="brand-tile"><img src="immagini/loghi/stmicroelectronics.svg" alt="STMicroelectronics"><span>STMicroelectronics</span></div>
+    <div class="brand-tile"><img src="immagini/loghi/microchip.svg" alt="Microchip"><span>Microchip</span></div>
+    <div class="brand-tile"><img src="immagini/loghi/renesas.svg" alt="Renesas"><span>Renesas</span></div>
+    <div class="brand-tile"><img src="immagini/loghi/nxp.svg" alt="NXP"><span>NXP</span></div>
+    <div class="brand-tile"><img src="immagini/loghi/espressif.svg" alt="Espressif"><span>Espressif</span></div>
+    <div class="brand-tile"><img src="immagini/loghi/raspberrypi.svg" alt="Raspberry Pi"><span>Raspberry Pi</span></div>
+  </div>
+
+  <!-- Punti di forza di un professionista singolo rispetto a una struttura grande -->
+  <h2 class="section-title">Approccio</h2>
+  <div class="grid grid-4">
+    <div class="card">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>
+      </svg>
+      <h3>Referente tecnico unico</h3>
+      <p>Rapporto diretto con il progettista che sviluppa il firmware, senza passaggi intermedi tra specifiche e implementazione.</p>
+    </div>
+    <div class="card">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M7 20h10M12 16v4"/><polyline points="8 10 10.5 12.5 16 7.5"/>
+      </svg>
+      <h3>Co-design hardware, firmware e software</h3>
+      <p>Co-progettazione con chi disegna la scheda fin dall'inizio, e consegna del firmware completo insieme agli strumenti per configurarlo e collaudarlo: meno tempo per arrivare sul mercato.</p>
+    </div>
+    <div class="card">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/>
+      </svg>
+      <h3>Italia ed estero</h3>
+      <p>Collaborazioni anche da remoto, in italiano e in inglese, con aggiornamenti regolari sullo stato di avanzamento.</p>
+    </div>
+    <div class="card">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 12a8 8 0 0 1 14-5.3"/><polyline points="18 3 18 7 14 7"/>
+        <path d="M20 12a8 8 0 0 1-14 5.3"/><polyline points="6 21 6 17 10 17"/>
+      </svg>
+      <h3>Supporto sull'intero ciclo di vita</h3>
+      <p>Il firmware evolve con il prodotto: aggiornamenti, nuove funzioni e porting quando un componente esce di produzione.</p>
+    </div>
+  </div>
+
+  <h2 class="section-title">Ambiti di lavoro</h2>
+  <div class="grid">
+    <div class="card">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="7" y="7" width="10" height="10" rx="1"/>
+        <line x1="9" y1="2" x2="9" y2="7"/><line x1="15" y1="2" x2="15" y2="7"/>
+        <line x1="9" y1="17" x2="9" y2="22"/><line x1="15" y1="17" x2="15" y2="22"/>
+        <line x1="2" y1="9" x2="7" y2="9"/><line x1="2" y1="15" x2="7" y2="15"/>
+        <line x1="17" y1="9" x2="22" y2="9"/><line x1="17" y1="15" x2="22" y2="15"/>
+      </svg>
+      <h3>Firmware su microcontrollori multi-vendor</h3>
+      <p>Sviluppo bare-metal o con sistema operativo real-time, con i tool ufficiali dei principali produttori: gestione periferiche, bootloader e aggiornamento firmware.</p>
+      <div class="tech-tags">
+        <span class="tag">STM32</span>
+        <span class="tag">Microchip</span>
+        <span class="tag">Renesas</span>
+        <span class="tag">NXP</span>
+        <span class="tag">ESP32</span>
+        <span class="tag">FreeRTOS</span>
+      </div>
+    </div>
+    <div class="card">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="5" cy="6" r="2.2"/><circle cx="19" cy="6" r="2.2"/><circle cx="12" cy="19" r="2.2"/>
+        <line x1="6.8" y1="7.2" x2="10.6" y2="17"/><line x1="17.2" y1="7.2" x2="13.4" y2="17"/>
+        <line x1="7.2" y1="6" x2="16.8" y2="6"/>
+      </svg>
+      <h3>Protocolli di comunicazione industriale</h3>
+      <p>Progettazione e implementazione di protocolli per reti di dispositivi: RS-485 custom, CAN/CANopen, Modbus RTU.</p>
+      <div class="tech-tags">
+        <span class="tag">RS-485</span>
+        <span class="tag">CANopen</span>
+        <span class="tag">Modbus</span>
+      </div>
+    </div>
+    <div class="card">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12.5a10 10 0 0 1 14 0"/><path d="M8 15.5a5.5 5.5 0 0 1 8 0"/><circle cx="12" cy="18.5" r="1.2"/>
+        <path d="M2 9.5a14.5 14.5 0 0 1 20 0"/>
+      </svg>
+      <h3>Connettività, RF e IoT</h3>
+      <p>Firmware embedded per moduli RF e dispositivi connessi, anche per l'agricoltura: LoRaWAN, Wireless M-Bus, sub-GHz, Bluetooth, Wi-Fi, GPS e RFID, con gateway su Linux embedded.</p>
+      <div class="tech-tags">
+        <span class="tag">LoRaWAN</span>
+        <span class="tag">Wireless M-Bus</span>
+        <span class="tag">Sub-GHz</span>
+        <span class="tag">BLE</span>
+        <span class="tag">Wi-Fi</span>
+        <span class="tag">GPS</span>
+        <span class="tag">RFID</span>
+      </div>
+    </div>
+    <div class="card">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="3"/>
+        <path d="M12 3v2.4M12 18.6V21M21 12h-2.4M5.4 12H3M18.4 5.6l-1.7 1.7M7.3 16.7l-1.7 1.7M18.4 18.4l-1.7-1.7M7.3 7.3 5.6 5.6"/>
+      </svg>
+      <h3>Sistemi di controllo e automazione</h3>
+      <p>Firmware per l'elettronica di controllo di attuatori, motori e sensori in dispositivi di automazione, con attenzione ad affidabilità e sicurezza.</p>
+      <div class="tech-tags">
+        <span class="tag">Attuatori</span>
+        <span class="tag">Automazione</span>
+        <span class="tag">FPGA</span>
+      </div>
+    </div>
+    <div class="card">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="6" width="7" height="12" rx="1"/><rect x="14" y="6" width="7" height="12" rx="1"/>
+        <path d="M10 12h4"/><polyline points="12.5 10.5 14 12 12.5 13.5"/>
+      </svg>
+      <h3>Porting e obsolescenza</h3>
+      <p>Migrazione del firmware su un nuovo microcontrollore quando un componente esce di produzione o serve ridurre i costi, mantenendo il comportamento del prodotto.</p>
+      <div class="tech-tags">
+        <span class="tag">Migrazione MCU</span>
+        <span class="tag">Refactoring</span>
+      </div>
+    </div>
+    <div class="card">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="4" y1="6" x2="20" y2="6"/><circle cx="9" cy="6" r="2"/>
+        <line x1="4" y1="12" x2="20" y2="12"/><circle cx="15" cy="12" r="2"/>
+        <line x1="4" y1="18" x2="20" y2="18"/><circle cx="7" cy="18" r="2"/>
+      </svg>
+      <h3>Configurazione e collaudo di fine linea</h3>
+      <p>Strumenti software CLI e GUI per programmare, configurare e collaudare le schede in produzione e in assistenza, in comunicazione diretta con il firmware.</p>
+      <div class="tech-tags">
+        <span class="tag">CLI / GUI</span>
+        <span class="tag">.NET</span>
+        <span class="tag">Collaudo</span>
+        <span class="tag">Tooling</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Esempio illustrativo di codice (scritto per il sito, non tratto da progetti di clienti) -->
+  <h2 class="section-title">Qualità del codice</h2>
+  <div class="split">
+    <div class="split-text">
+      <p>Il firmware viene scritto per essere letto, verificato e mantenuto nel tempo, anche da altri sviluppatori.</p>
+      <ul>
+        <li>C / C++ strutturato, con moduli separati per periferiche, protocolli e logica applicativa</li>
+        <li>Commenti e documentazione tecnica sulle scelte non ovvie</li>
+        <li>Verifiche incrementali su hardware reale ed evaluation board</li>
+        <li>Versioni tracciate e backup di ogni fase di sviluppo</li>
+      </ul>
+    </div>
+    <div class="code-window">
+      <div class="code-bar"><i></i><i></i><i></i><span>modbus_crc.c</span></div>
+<pre><span class="c">/**
+ * Calcola il CRC-16 Modbus (polinomio 0xA001, riflesso)
+ * di un frame RTU. Il risultato va trasmesso LSB first.
+ */</span>
+<span class="t">uint16_t</span> <span class="f">modbus_crc16</span>(<span class="k">const</span> <span class="t">uint8_t</span> *buf, <span class="t">size_t</span> len)
+{
+    <span class="t">uint16_t</span> crc = <span class="n">0xFFFF</span>;
+
+    <span class="k">for</span> (<span class="t">size_t</span> i = <span class="n">0</span>; i &lt; len; i++) {
+        crc ^= buf[i];
+        <span class="k">for</span> (<span class="t">uint8_t</span> b = <span class="n">0</span>; b &lt; <span class="n">8</span>; b++) {
+            crc = (crc &amp; <span class="n">1u</span>) ? (crc &gt;&gt; <span class="n">1</span>) ^ <span class="n">0xA001</span>
+                              : (crc &gt;&gt; <span class="n">1</span>);
+        }
+    }
+    <span class="k">return</span> crc;
+}</pre>
+    </div>
+  </div>
+
+  <!-- Invito finale al contatto -->
+  <section class="cta-band">
+    <h2>Un nuovo progetto embedded?</h2>
+    <p>A partire dai requisiti del dispositivo viene fornita una prima valutazione di fattibilità, tempi e approccio tecnico.</p>
+    <a href="contatti.html" class="btn btn-primary">Richiedi una valutazione</a>
+  </section>
+</main>
+
+<footer>
+  &copy; <span id="year"></span> Antonio Libardo — Progettazione firmware embedded
+  · <a href="#" onclick="openCookieSettings(); return false;">Impostazioni cookie</a>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="cookie-consent.js?v=20260930"></script>
+</body>
+</html>

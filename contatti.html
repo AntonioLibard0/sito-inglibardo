@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contatti | Antonio Libardo</title>
+<link rel="canonical" href="https://inglibardo.it/contatti.html">
+<link rel="stylesheet" href="style.css?v=20260930">
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <div class="brand">Antonio <span>Libardo</span></div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="servizi.html">Servizi</a>
+      <a href="contatti.html" class="active">Contatti</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- Fascia con la stessa immagine della Home (vedi .hero-banner in style.css) -->
+  <section class="hero hero-banner">
+    <h1>Contatti</h1>
+    <p>Per informazioni tecniche, richieste di preventivo o proposte di collaborazione.</p>
+  </section>
+
+  <div class="contact-grid">
+    <div class="contact-box">
+      <div class="field">
+        <div class="label">Email</div>
+        <div class="value"><a href="mailto:info@inglibardo.it">info@inglibardo.it</a><br><a href="mailto:antonio@inglibardo.it">antonio@inglibardo.it</a></div>
+      </div>
+      <div class="field">
+        <div class="label">Telefono</div>
+        <div class="value"><a href="tel:+393287574851">328 757 4851</a></div>
+      </div>
+      <div class="field">
+        <div class="label">Indirizzo</div>
+        <div class="value">Via Marco Polo Esterna, 91<br>41012 Carpi (MO)</div>
+      </div>
+      <div class="field">
+        <div class="label">Ambito</div>
+        <div class="value">Progettazione firmware embedded</div>
+      </div>
+    </div>
+
+    <div class="map-frame">
+      <iframe
+        src="https://www.google.com/maps?q=Via+Marco+Polo+Esterna+91+41012+Carpi+MO+Italia&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Mappa - Via Marco Polo Esterna 91, Carpi (MO)">
+      </iframe>
+    </div>
+  </div>
+</main>
+
+<footer>
+  &copy; <span id="year"></span> Antonio Libardo — Progettazione firmware embedded
+  · <a href="#" onclick="openCookieSettings(); return false;">Impostazioni cookie</a>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="cookie-consent.js?v=20260930"></script>
+</body>
+</html>
