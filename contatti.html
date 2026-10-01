@@ -229,6 +229,20 @@
   · <a href="#" onclick="openCookieSettings(); return false;">Impostazioni cookie</a>
 </footer>
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>
+// Contatore visite (sul Raspberry, via Tailscale Funnel): una richiesta invisibile per pagina vista, nessun cookie.
+// Per non contare le proprie visite: aprire una volta https://inglibardo.it/?nc=d96b62b4d4 su ogni browser.
+(function () {
+  if (location.hostname !== "inglibardo.it") return;          // niente conteggio in anteprima locale
+  var mia = 0;
+  try {
+    if (location.search.indexOf("nc=d96b62b4d4") >= 0) localStorage.setItem("nc", "1");
+    mia = localStorage.getItem("nc") ? 1 : 0;
+  } catch (e) {}
+  new Image().src = "https://helmserver.tailaa0d34.ts.net/c.gif?p=" + encodeURIComponent(location.pathname) +
+    "&r=" + encodeURIComponent(document.referrer) + "&m=" + mia;
+})();
+</script>
 <script src="cookie-consent.js?v=20260930"></script>
 </body>
 </html>
