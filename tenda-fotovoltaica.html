@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Pagina NASCOSTA: raggiungibile solo dal link diretto.
+     Non è collegata dal menu né dalle altre pagine, non è nella sitemap
+     e chiede ai motori di ricerca di non indicizzarla (noindex).
+     NON aggiungerla a robots.txt: è un file pubblico e ne rivelerebbe l'indirizzo. -->
+<meta name="robots" content="noindex, nofollow">
+<title>Tenda fotovoltaica – video di presentazione | Antonio Libardo</title>
+<meta name="description" content="Video di presentazione della tenda con sezioni fotovoltaiche motorizzate.">
+<meta name="theme-color" content="#0f1720">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="style.css?v=20261002">
+<style>
+  /* Stili solo di questa pagina (il resto viene da style.css) — uguali a scenario-luci.html */
+  .video-list { max-width: var(--maxw); margin: 0 auto; padding: 0 20px 40px; }
+  .video-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px;
+    margin-bottom: 24px;
+  }
+  .video-card h2 { margin: 0 0 6px; font-size: 1.25rem; }
+  .video-card .durata { color: var(--accent-2); font-size: 0.9rem; margin-left: 6px; font-weight: normal; }
+  .video-card p { margin: 0 0 14px; color: var(--text-dim); }
+  .video-card video {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    background: #000;
+  }
+  .torna { text-align: center; padding: 0 20px 48px; }
+</style>
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <div class="brand">Antonio <span>Libardo</span></div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Tenda fotovoltaica</h1>
+    <p>Una copertura ombreggiante in cui le fasce di tela sono sostituite da sezioni rigide che portano pannelli fotovoltaici: le sezioni scorrono e si sovrappongono, così la tenda si apre e si richiude con un'unica motorizzazione.</p>
+    <p>Domanda di brevetto depositata. I video mostrano modelli 3D di concept.</p>
+  </section>
+
+  <div class="video-list">
+
+    <!-- preload="metadata": il video si scarica solo quando si preme play.
+         "#t=..." nell'indirizzo sceglie il fotogramma mostrato come anteprima. -->
+
+    <div class="video-card">
+      <h2>Il concetto <span class="durata">30 s</span></h2>
+      <p>Prima versione del modello: le sezioni con i pannelli si aprono a ventaglio.</p>
+      <video controls preload="metadata" playsinline src="video/tenda/tenda_1_vista.mp4#t=15"></video>
+    </div>
+
+    <div class="video-card">
+      <h2>Apertura e chiusura <span class="durata">30 s</span></h2>
+      <p>Il ciclo completo: la tenda si apre e torna raccolta.</p>
+      <video controls preload="metadata" playsinline src="video/tenda/tenda_2_apertura.mp4#t=15"></video>
+    </div>
+
+    <div class="video-card">
+      <h2>Versione evoluta <span class="durata">30 s</span></h2>
+      <p>Il modello più recente, visto nell'insieme.</p>
+      <video controls preload="metadata" playsinline src="video/tenda/tenda_3_evoluta.mp4#t=15"></video>
+    </div>
+
+  </div>
+
+  <div class="torna">
+    <a href="index.html" class="btn btn-primary">Torna alla home</a>
+  </div>
+</main>
+
+<footer>
+  &copy; <span id="year"></span> Antonio Libardo
+  · Via Marco Polo Esterna 91, 41012 Carpi (MO) · <a href="tel:+393287574851">328 757 4851</a>
+  · <a href="mailto:info@inglibardo.it">info@inglibardo.it</a>
+  · <a href="#" onclick="openCookieSettings(); return false;">Impostazioni cookie</a>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>
+// Contatore visite (sul Raspberry, via Tailscale Funnel): una richiesta invisibile per pagina vista, nessun cookie.
+// Stesso codice delle altre pagine. Per non contare le proprie visite: https://inglibardo.it/?nc=d96b62b4d4
+(function () {
+  if (location.hostname !== "inglibardo.it") return;          // niente conteggio in anteprima locale
+  var mia = 0;
+  try {
+    if (location.search.indexOf("nc=d96b62b4d4") >= 0) localStorage.setItem("nc", "1");
+    mia = localStorage.getItem("nc") ? 1 : 0;
+  } catch (e) {}
+  new Image().src = "https://helmserver.tailaa0d34.ts.net/c.gif?p=" + encodeURIComponent(location.pathname) +
+    "&r=" + encodeURIComponent(document.referrer) + "&m=" + mia;
+})();
+</script>
+<script src="cookie-consent.js?v=20260930"></script>
+</body>
+</html>
